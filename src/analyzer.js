@@ -30,21 +30,25 @@ const analyzer = {
 
     for (let i = 0; i < array.length; i++) {
       suma += array[i].length;
-      console.log (suma)
+      //console.log(suma);
     }
     const promedio = suma / array.length;
 
-    return (Math.round(promedio*100))/100;
+    return Math.round(promedio * 100) / 100;
 
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberCount: (text) => {
+    //const arrayNum = text.match(/\b\d+(\.\d+)?\b/g);
+    //return arrayNum ? arrayNum.length : 0;
+
     const arrayNum = text.split(" ");
     let contador = 0;
     for (let i = 0; i < arrayNum.length; i++) {
-      const arrayIn = arrayNum[i].match(/\d+/g);
-      console.log(arrayIn);
-      if (arrayIn !== null) {
+      const arrayIn = arrayNum[i].replace(/\.$/, "");
+      //console.log(arrayNum[i]);
+      //console.log(arrayNum[i] * 1);
+      if (!isNaN(arrayIn) && arrayIn !== "") {
         contador++;
       }
     }
@@ -53,15 +57,17 @@ const analyzer = {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberSum: (text) => {
-    const arraySum = text.split(" ");
+    const array = text.match(/\b\d+(\.\d+)?\b/g);
     let suma = 0;
-    for (let i = 0; i < arraySum.length; i++) {
-      const num = parseFloat(arraySum[i]);
-      if (!isNaN(num)) {
-        suma += num;
-      }
+    //console.log(array);
+    if (array === null) {
+      return 0;
+    } else {
+      suma = array.reduce((sum, num) => {
+        return sum + parseFloat(num);
+      }, 0);
+      return suma;
     }
-    return suma;
 
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
   },
