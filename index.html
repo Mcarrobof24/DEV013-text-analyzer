@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"> <title>Analizador de texto</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Analizador de Texto</h1>
+  </header>
+  <textarea name="user-input"  cols="30" rows="10" placeholder="Ingresa el texto"></textarea>
+  <ul>
+    <li class="caja" data-testid="word-count">Palabras: 0</li>
+    <li class="caja" data-testid="character-count">Caracteres: 0</li>
+    <li class="caja" data-testid="character-no-spaces-count">Caracteres excluyendo espacios: 0</li>
+    <li class="caja" data-testid="number-count">Números: 0</li>
+    <li class="caja" data-testid="number-sum">Suma de números: 0</li>
+    <li class="caja" data-testid="word-length-average">Longitud de palabras: 0</li>
+  </ul>
+  <button id="reset-button">Limpiar</button>
+  <footer>
+    <p>Copyright ©2024 Camila Arrobo</p>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
