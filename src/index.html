@@ -7,25 +7,25 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <h1>Analizador de Texto</h1>
   </header>
-  <textarea name="user-input"  cols="30" rows="10"></textarea>
+  <textarea name="user-input"  cols="30" rows="10" placeholder="Ingresa el texto"></textarea>
   <ul>
-    <li class="caja" data-testid="word-count">Recuento de palabras: 0</li>
-    <li class="caja" data-testid="character-count">Recuento de caracteres: 0</li>
-    <li class="caja" data-testid="character-no-spaces-count">Recuento de caracteres excluyendo espacios y signos de puntuación: 0</li>
-    <li class="caja" data-testid="number-count">Recuento de números: 0</li>
-    <li class="caja" data-testid="number-sum">Suma total de números: 0</li>
-    <li class="caja" data-testid="word-length-average">Longitud media de palabras: 0</li>
+    <li class="caja" data-testid="word-count">Palabras: 0</li>
+    <li class="caja" data-testid="character-count">Caracteres: 0</li>
+    <li class="caja" data-testid="character-no-spaces-count">Caracteres excluyendo espacios: 0</li>
+    <li class="caja" data-testid="number-count">Números: 0</li>
+    <li class="caja" data-testid="number-sum">Suma de números: 0</li>
+    <li class="caja" data-testid="word-length-average">Longitud de palabras: 0</li>
   </ul>
   <button id="reset-button">Limpiar</button>
   <footer>
-    <p>María Camila Arrobo Fernández</p>
+    <p>Copyright ©2024 Camila Arrobo</p>
   </footer>
   <script src="index.js" type="module"></script>
 </body>

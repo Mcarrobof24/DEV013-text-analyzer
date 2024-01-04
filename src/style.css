@@ -2,61 +2,81 @@
     --blanco: #ffffff;
     --gris: #757575;
     --oscuro: #212121;
-    --primario: #FFC107;
+    --primario: #77DAF4;
     --secundario: #0097a7;
-    --fuente: 'Roboto', sans-serif;
+    --fuente: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url(fondo2.png);
+    margin: 10px;
 }
 
 header{
-    background-color: var(--gris);
+    padding: 5px;
     text-align: center;
-    color: var(--blanco);
+    color: var(--oscuro);
     font-family: var(--fuente);
     font-size: 20px;
     font-weight: bold;
-
+    text-shadow: 0px 0px 8px rgb(0,0,0, .5);
 }
 textarea[name="user-input"]{
     display: block;
     box-sizing: border-box;
     font-family: var(--fuente);
     resize: none;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
+    padding: 5px;
+    border: solid var(--oscuro) 2px;
+    border-radius: 5px;
+    box-shadow: 12px 12px 0px 0px rgb(0,0,0,.2);
+}
+textarea::placeholder{
+    font-family: var(--fuente);
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
 }
 ul{
-    margin: 0;
+    margin: 30px;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    
-   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .caja{
     font-family: var(--fuente);
+    background-color: var(--blanco);
     text-align: center;
     list-style-type: none;
-    box-sizing: content-box;
+    box-sizing: border-box ;
     border: solid #0097a7 2px;
+    border-radius: 5px;
     margin: 10px;
-    padding: 5px;  
-   
+    padding: 10px;
+    box-shadow: 8px 8px 0px 0px rgb(0,0,0,.2 );
 }
-
 #reset-button{
     font-family: var(--fuente);
     font-size: 20px;
+    border: solid var(--oscuro) 2px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 0px 0px rgb(0,0,0,.2 );
     font-weight: bold;
-    width: 100px;
+    padding: 10px 30px;
     margin-left: 50%;
     transform: translateX(-50%);
-
+    cursor: pointer;
 }
-
+button:hover{
+    background-color: var(--primario);
+    transition: all 0.5s ease;
+}
 footer{
     font-family: var(--fuente);
-    background-color: var(--gris);
+    font-size: 20px;
     text-align: center;
-    color: var(--blanco);
-    font-weight: bold;
+    color: var(--oscuro);
+    margin-top: 30px;   
 }
