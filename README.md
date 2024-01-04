@@ -198,8 +198,7 @@ Se describen los criterios de diseño que se tomaron en el proyecto.
 
 Una prueba unitaria es una técnica de prueba de software en la que se comprueba que cada componente individual de un programa o sistema funciona correctamente de manera aislada. En otras palabras, se prueba cada unidad de código por separado para asegurarse de que cumpla con los requisitos y especificaciones.
 
-Las pruebas unitarias de este proyecto ejecutarán los métodos `getWordCount`, `getCharacterCount`, `getCharacterCountExcludingSpaces`, `getNumbersCount`,
-`getNumbersSum` y `getAverageWordLength` con diferentes argumentos y se confirmará que los valores retornados sean los esperados.
+Las pruebas unitarias de este proyecto ejecutarán los métodos `getWordCount`, `getCharacterCount`, `getCharacterCountExcludingSpaces`, `getNumbersCount`, `getNumbersSum` y `getAverageWordLength` con diferentes argumentos y se confirmará que los valores retornados sean los esperados.
 
 Puedes ejecutar estas pruebas con el comando `npm run test`.
 
@@ -211,8 +210,6 @@ Estas pruebas analizarán los archivos
 [`analyzer.js`](src/analyzer.js)
 y
 [`style.css`](src/style.css)
-para verificar que cumples con los
-
 
 Puedes ejecutar todas estas pruebas con el comando `npm run test:oas`
 
